@@ -11,8 +11,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/auth' element={<Auth/>}/>
-      <Route path='/' element={<Home/>}/>
-      {/* <Route path='/' element={<ProtectedRoute><Home/></ProtectedRoute> }/> */}
+      <Route path='/' element={<ProtectedRoute><Home/></ProtectedRoute> }/>
       <Route path='/createEvent' element={<ProtectedRoute><CreateEvent/></ProtectedRoute>}/>
       <Route path='/createdEvents' element={<ProtectedRoute><UserEvents/></ProtectedRoute>}/>
       
